@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/guess-number-app/static/css/main.073c9b0a.css",
+    "main.js": "/guess-number-app/static/js/main.d7cb3594.js",
+    "static/js/787.ad562955.chunk.js": "/guess-number-app/static/js/787.ad562955.chunk.js",
+    "static/media/logo.svg": "/guess-number-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/guess-number-app/index.html",
+    "main.073c9b0a.css.map": "/guess-number-app/static/css/main.073c9b0a.css.map",
+    "main.d7cb3594.js.map": "/guess-number-app/static/js/main.d7cb3594.js.map",
+    "787.ad562955.chunk.js.map": "/guess-number-app/static/js/787.ad562955.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d7cb3594.js"
+  ]
+}
