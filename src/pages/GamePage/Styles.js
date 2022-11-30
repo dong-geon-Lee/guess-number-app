@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #222;
+  background-color: ${(props) => (props.check ? "#60b347" : "#222")};
   width: 100vw;
   height: 100vh;
 `;
@@ -10,6 +10,11 @@ export const Top = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2.6rem;
+`;
+
+export const BtnBox = styled.div`
+  display: flex;
+  gap: 1.4rem;
 `;
 
 export const Button = styled.button`
@@ -24,6 +29,21 @@ export const Button = styled.button`
   &:hover {
     background-color: #f1f3f5;
   }
+`;
+
+export const UpBtn = styled(Button)`
+  cursor: ${(props) =>
+    props.check || !props.play ? "not-allowed" : "pointer"};
+`;
+
+export const DownBtn = styled(Button)`
+  cursor: ${(props) =>
+    props.check || !props.play ? "not-allowed" : "pointer"};
+`;
+
+export const CheckBtn = styled(Button)`
+  cursor: ${(props) =>
+    props.check || !props.play ? "not-allowed" : "pointer"};
 `;
 
 export const Text = styled.h3`
@@ -47,6 +67,7 @@ export const Title = styled.h1`
 
 export const Box = styled.div`
   width: 12rem;
+  width: ${(props) => (props.check ? "24rem" : "12rem")};
   height: 10rem;
   background-color: #fff;
   z-index: 3;
@@ -93,23 +114,18 @@ export const Left = styled.div`
   padding-right: 1rem;
 `;
 
-export const Input = styled.input`
-  background-color: #222;
-  border: 2px solid #fff;
-  height: 9rem;
+export const Input = styled.input``;
+
+export const Border = styled.div`
+  background-color: inherit;
+  border: 3px solid #fff;
   font-size: 3.6rem;
-  width: 45%;
+  width: 60%;
   text-align: center;
   color: #fff;
   font-family: inherit;
   margin: 3rem 0;
-
-  &[type="number"]::-webkit-inner-spin-button,
-  &[type="number"]::-webkit-outer-spin-button {
-    /* -webkit-appearance: none; */
-    margin-right: 1rem;
-    margin-left: -3rem;
-  }
+  padding: 1.2rem 0;
 `;
 
 export const Right = styled.div`
@@ -117,7 +133,7 @@ export const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  padding: 10rem 4rem 10rem 10rem;
+  padding: 10rem 4rem 10rem 4rem;
 `;
 
 export const H2 = styled.h2`
@@ -133,7 +149,6 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   gap: 1.2rem;
-
   margin: 1.6rem 0;
 
   &:first-child {
