@@ -25,6 +25,7 @@ export const Button = styled.button`
   padding: 1.6rem 2rem;
   background-color: #fff;
   cursor: pointer;
+  letter-spacing: 1px;
 
   &:hover {
     background-color: #f1f3f5;

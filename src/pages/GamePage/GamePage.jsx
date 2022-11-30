@@ -57,7 +57,7 @@ const GamePage = () => {
   return (
     <Container check={numCheck}>
       <Top>
-        <Button onClick={() => handleGameReset()}>Again!</Button>
+        <Button onClick={() => handleGameReset()}>Retry</Button>
         <Text>(Between 1 and 10)</Text>
       </Top>
 
@@ -102,7 +102,7 @@ const GamePage = () => {
 
         <Right>
           <H2>{text}</H2>
-          {/* <H2>Pick a number 1 ~ 10.</H2> */}
+
           <Content>
             <Div>
               <Icon>💯</Icon>

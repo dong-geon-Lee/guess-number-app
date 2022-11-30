@@ -16,15 +16,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;    
     line-height: 1.5;
+    overflow: hidden;
   }
-
-  /* ul {
-    outline: none;
-  }
-
-  a {
-    text-decoration: none;
-  } */
 `;
 
 export default GlobalStyle;
