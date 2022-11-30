@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/guess-number-app/static/js/main.c114aefa.js",
+    "main.js": "/guess-number-app/static/js/main.2a5845ac.js",
     "index.html": "/guess-number-app/index.html",
-    "main.c114aefa.js.map": "/guess-number-app/static/js/main.c114aefa.js.map"
+    "main.2a5845ac.js.map": "/guess-number-app/static/js/main.2a5845ac.js.map"
   },
   "entrypoints": [
-    "static/js/main.c114aefa.js"
+    "static/js/main.2a5845ac.js"
   ]
 }
