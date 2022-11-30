@@ -37,19 +37,11 @@ const GamePage = () => {
       setHighScore(score);
       setText("🎉 Correct Number");
     } else {
-      if (num > randomNum) {
-        setText("📈 Too high!");
-      }
-
-      if (num < randomNum) {
-        setText("📉 Too low!");
-      }
-
+      if (num > randomNum) setText("📈 Too high!");
+      if (num < randomNum) setText("📉 Too low!");
       setNumCheck(false);
       setScore(score - 1);
     }
-
-    console.log(num, randomNum);
   };
 
   const playing = score > 0;
@@ -63,7 +55,7 @@ const GamePage = () => {
 
       <Center>
         <Title>Guess My Number!</Title>
-        <Box check={numCheck}>
+        <Box check={numCheck} className="media__box">
           <SubText>{numCheck ? randomNum : "?"}</SubText>
         </Box>
         <Line />
@@ -101,8 +93,7 @@ const GamePage = () => {
         </Left>
 
         <Right>
-          <H2>{text}</H2>
-
+          <H2 className="media__h2">{playing ? text : "💥 Game over!"}</H2>
           <Content>
             <Div>
               <Icon>💯</Icon>

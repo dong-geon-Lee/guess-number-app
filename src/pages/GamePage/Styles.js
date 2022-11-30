@@ -1,15 +1,36 @@
 import styled from "styled-components";
+import { device } from "../../styles/GlobalStyle";
 
 export const Container = styled.div`
   background-color: ${(props) => (props.check ? "#60b347" : "#222")};
   width: 100vw;
   height: 100vh;
+
+  @media ${device.mobileL} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Top = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2.6rem;
+
+  @media ${device.mobileL} {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+
+    & button {
+      font-size: 1.2rem;
+    }
+
+    & h3 {
+      display: none;
+    }
+  }
 `;
 
 export const BtnBox = styled.div`
@@ -56,6 +77,23 @@ export const Center = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @media ${device.mobileL} {
+    & h1 {
+      font-size: 2.4rem;
+      line-height: 2;
+    }
+
+    & .media__box {
+      width: 10rem;
+      height: 8rem;
+      margin: 2rem auto;
+    }
+
+    & div:last-child {
+      top: 66%;
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -67,7 +105,6 @@ export const Title = styled.h1`
 `;
 
 export const Box = styled.div`
-  width: 12rem;
   width: ${(props) => (props.check ? "24rem" : "12rem")};
   height: 10rem;
   background-color: #fff;
@@ -78,9 +115,6 @@ export const Box = styled.div`
   margin: 8rem 0;
   border-radius: 0.4rem;
   position: relative;
-
-  &::before {
-  }
 `;
 
 export const Line = styled.div`
@@ -93,6 +127,10 @@ export const Line = styled.div`
   height: 0.6rem;
   transform: translate(-50%, 255%);
   z-index: 1;
+
+  @media ${device.mobileL} {
+    display: none;
+  }
 `;
 
 export const SubText = styled.h2`
@@ -105,6 +143,13 @@ export const Bottom = styled.div`
   grid-template-columns: repeat(2, 1fr);
   width: 80%;
   margin: 8rem auto;
+
+  @media ${device.mobileL} {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0rem auto;
+  }
 `;
 
 export const Left = styled.div`
@@ -113,6 +158,11 @@ export const Left = styled.div`
   align-items: center;
   padding: 6rem 0;
   padding-right: 1rem;
+
+  @media ${device.mobileL} {
+    padding: 0rem;
+    padding-right: 0;
+  }
 `;
 
 export const Input = styled.input``;
@@ -127,6 +177,12 @@ export const Border = styled.div`
   font-family: inherit;
   margin: 3rem 0;
   padding: 1.2rem 0;
+
+  @media ${device.mobileL} {
+    width: 20%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
 `;
 
 export const Right = styled.div`
@@ -135,6 +191,16 @@ export const Right = styled.div`
   justify-content: center;
   align-items: left;
   padding: 10rem 4rem 10rem 4rem;
+
+  @media ${device.mobileL} {
+    padding: 0rem;
+
+    & .media__h2 {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  }
 `;
 
 export const H2 = styled.h2`
@@ -144,6 +210,10 @@ export const H2 = styled.h2`
 export const Content = styled.div`
   color: #fff;
   margin-top: 2rem;
+
+  @media ${device.mobileL} {
+    margin-top: 0rem;
+  }
 `;
 
 export const Div = styled.div`
@@ -154,6 +224,10 @@ export const Div = styled.div`
 
   &:first-child {
     margin-top: 3rem;
+  }
+
+  @media ${device.mobileL} {
+    justify-content: center;
   }
 `;
 
