@@ -33,11 +33,11 @@
 </details>
 
 <details>
-<summary>계좌복사 & 계좌이체</summary>  
+<summary>숫자 Up & Down</summary>  
 <div markdown="1">
 </div>
 <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207610277-50bcc798-3d0d-4aaf-9bd0-f18e528211c9.gif">
+ src="https://user-images.githubusercontent.com/69576865/207806123-c7748590-9148-47bc-8805-b9711ee8e9c3.gif">
 </details>
 
 <details>
