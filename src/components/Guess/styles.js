@@ -41,7 +41,7 @@ export const Box = styled.div`
 export const Title = styled.h1`
   color: #fff;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.6rem;
   letter-spacing: 0.3rem;
   margin-top: 3rem;
 `;

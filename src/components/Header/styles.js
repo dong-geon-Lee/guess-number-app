@@ -38,4 +38,6 @@ export const Button = styled.button`
 
 export const Text = styled.h3`
   color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
 `;

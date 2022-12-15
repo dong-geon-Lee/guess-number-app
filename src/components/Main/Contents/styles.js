@@ -19,8 +19,10 @@ export const Container = styled.div`
   }
 `;
 
-export const H2 = styled.h2`
+export const Text = styled.p`
   color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
 `;
 
 export const Content = styled.div`
@@ -48,10 +50,11 @@ export const Div = styled.div`
 `;
 
 export const Icon = styled.span`
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 1.7;
 `;
 
 export const Label = styled.label`
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 `;
