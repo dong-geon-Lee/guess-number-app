@@ -41,73 +41,30 @@
 </details>
 
 <details>
-<summary>대출 받기</summary>  
+<summary>숫자 맞추기</summary>  
 <div markdown="1">
 </div>
 <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207613936-5bcffdd3-57ef-4417-9f66-bcc25781ab31.gif">
+ src="https://user-images.githubusercontent.com/69576865/207806722-d09302bb-2153-423e-821e-b8dbfd59c605.gif">
 </details>
 
 <details>
-<summary>계정 폐쇄</summary>  
+<summary>게임 재시작</summary>  
 <div markdown="1">
 </div>
 <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207615968-0597d1dc-b7db-426a-8151-55f8e56c3178.gif">
+ src="https://user-images.githubusercontent.com/69576865/207807285-87c3c743-af32-4e68-88bd-ba88f77900f8.gif">
 </details>
 
 <details>
-<summary>정렬하기</summary>  
+<summary>게임 종료</summary>  
 <div markdown="1">
 </div>
 <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207617366-baa91f0f-38f0-4b79-b0b8-38ede2542e05.gif">
+ src="https://user-images.githubusercontent.com/69576865/207808425-8f8992bf-6f19-4446-b5f1-1f3d87015743.gif">
 </details>
+<br/>
 
-<details>
-<summary>유효성 검사 (1) - 계좌이체</summary>  
- <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207621527-1b2e1577-e792-45a3-936c-16f704834513.gif">
- <div markdown="1">
-   <h4>예외조건</h4>
-   <p>1) 계좌번호를 입력하지 않는 경우</p>
-   <p>2) 이체금액을 입력하지 않는 경우</p>
-   <p>3) 계좌번호 이체금액 모두 입력하지 않는 경우</p>
-   <p>4) 자기 스스로에게 이체하는 경우</p>
-   <p>5) 잘못된 계좌번호를 입력하는 경우</p>
-   <p>6) 이체한도 100만원을 초과하는 경우</p>
-   <p>7) 잔액이 부족한 경우 </p>
- </div>
-</details>
-
-<details>
-<summary>유효성 검사 (2) - 대출 요청</summary>  
- <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207626418-e099a905-f3e6-40a7-94cf-7968ad0ec964.gif">
- <div markdown="1">
-   <h4>예외조건</h4>
-   <p>1) 계좌명의를 입력하지 않는 경우</p>
-   <p>2) 대출금액을 입력하지 않는 경우</p>
-   <p>3) 계좌명의와 대출금액 모두 입력하지 않는 경우</p>
-   <p>4) 본의명의로 대출하지 않는 경우</p>
-   <p>5) 대출한도 1000만원을 초과하는 경우</p>
- </div>
-</details>
-
-<details>
-<summary>유효성 검사 (3) - 계정 폐쇄</summary>  
- <img width="600" alt=""
- src="https://user-images.githubusercontent.com/69576865/207628572-ae7799c3-6103-4032-982d-eb7c5daa3000.gif">
- <div markdown="1">
-   <h4>예외조건</h4>
-   <p>1) 아이디를 입력하지 않는 경우</p>
-   <p>2) 비밀번호을 입력하지 않는 경우</p>
-   <p>3) 아이디가 존재하지 않거나 일치하지 않는 경우</p>
-   <p>4) 비밀번호가 일치하지 않는 경우</p>
-   <p>5) 아이디와 비밀번호 모두 입력하지 않은 경우</p>
- </div>
-</details>
-</br>
 
 ## :bust_in_silhouette: &nbsp; Crew
 Crew | Role | GitHub
