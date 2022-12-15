@@ -3,12 +3,11 @@
 
 ## :mag_right: &nbsp; Intro
 
-> 인터넷뱅킹 서비스를 모방하여 해당 앱을 구현하였습니다. <br/>
-계과이체와 대출요청 그리고 계정삭제 등의 기능을 가지고 있습니다.
+> 1에서 10사이의 숫자를 맞추는 간단한 게임 앱.
 <br/>
 
 ## :link: &nbsp; Link
-- https://dong-geon-lee.github.io/account-bank-app/
+- https://dong-geon-lee.github.io/guess-number-app/
 <br/>  
 
 ## :alarm_clock: &nbsp; Period
