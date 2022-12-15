@@ -1,5 +1,5 @@
 import React from "react";
-import GamePage from "./pages/GamePage/GamePage";
+import GamePage from "./pages/GamePage";
 import GlobalStyle from "./styles/GlobalStyle";
 
 const App = () => {
