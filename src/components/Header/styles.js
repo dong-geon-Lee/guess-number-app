@@ -25,8 +25,8 @@ export const Button = styled.button`
   border: none;
   border-radius: 0.4rem;
   font-family: inherit;
-  font-size: 1.6rem;
-  padding: 1.6rem 2rem;
+  font-size: 1.8rem;
+  padding: 2rem 4rem;
   background-color: #fff;
   cursor: pointer;
   letter-spacing: 1px;

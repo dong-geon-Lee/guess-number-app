@@ -4,14 +4,14 @@ import { Container, Border, UpBtn, DownBtn, BtnBox, CheckBtn } from "./styles";
 const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
   const playing = score > 0;
 
-  const handlePlusNumber = (num) => {
-    if (num >= 10) return;
-    setNumber((prevState) => prevState + 1);
-  };
-
   const handleMinusNumber = (num) => {
     if (num <= 0) return;
     setNumber((prevState) => prevState - 1);
+  };
+
+  const handlePlusNumber = (num) => {
+    if (num >= 10) return;
+    setNumber((prevState) => prevState + 1);
   };
 
   return (

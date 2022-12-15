@@ -18,7 +18,7 @@ export const Border = styled.div`
   background-color: inherit;
   border: 3px solid #fff;
   font-size: 3.6rem;
-  width: 60%;
+  width: 28rem;
   text-align: center;
   color: #fff;
   font-family: inherit;
