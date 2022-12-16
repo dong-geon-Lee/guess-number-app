@@ -63,6 +63,14 @@
 <img width="600" alt=""
  src="https://user-images.githubusercontent.com/69576865/207808425-8f8992bf-6f19-4446-b5f1-1f3d87015743.gif">
 </details>
+
+<details>
+<summary>반응형(모바일)</summary>  
+<div markdown="1">
+</div>
+<img width="600" alt=""
+ src="https://user-images.githubusercontent.com/69576865/208074511-9ad9fa05-85a2-4dcc-ac6c-0f57157b12fd.gif">
+</details>
 <br/>
 
 
