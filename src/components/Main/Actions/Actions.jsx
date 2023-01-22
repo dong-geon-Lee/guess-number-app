@@ -1,8 +1,15 @@
 import React from "react";
 import { Container, Border, UpBtn, DownBtn, BtnBox, CheckBtn } from "./styles";
+import { checkBtnStatus } from "../../../helper/calculate";
+import {
+  CHECK__BTN,
+  MINUS__BTN,
+  PLUS__BTN,
+} from "../../../constants/constants";
 
 const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
   const playing = score > 0;
+  const btnDisabled = checkBtnStatus(numCheck, playing);
 
   const handleMinusNumber = (num) => {
     if (num <= 0) return;
@@ -22,25 +29,25 @@ const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
           onClick={() => handleMinusNumber(number)}
           check={numCheck}
           play={playing}
-          disabled={numCheck || !playing ? true : false}
+          disabled={btnDisabled}
         >
-          -
+          {MINUS__BTN}
         </DownBtn>
         <UpBtn
           onClick={() => handlePlusNumber(number)}
           check={numCheck}
           play={playing}
-          disabled={numCheck || !playing ? true : false}
+          disabled={btnDisabled}
         >
-          +
+          {PLUS__BTN}
         </UpBtn>
         <CheckBtn
           onClick={() => handleCheckNumber(number)}
           check={numCheck}
           play={playing}
-          disabled={numCheck || !playing ? true : false}
+          disabled={btnDisabled}
         >
-          check
+          {CHECK__BTN}
         </CheckBtn>
       </BtnBox>
     </Container>

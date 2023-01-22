@@ -52,15 +52,9 @@ export const UpBtn = styled(Button)`
     props.check || !props.play ? "not-allowed" : "pointer"};
 `;
 
-export const DownBtn = styled(Button)`
-  cursor: ${(props) =>
-    props.check || !props.play ? "not-allowed" : "pointer"};
-`;
+export const DownBtn = styled(UpBtn)``;
 
-export const CheckBtn = styled(Button)`
-  cursor: ${(props) =>
-    props.check || !props.play ? "not-allowed" : "pointer"};
-`;
+export const CheckBtn = styled(UpBtn)``;
 
 export const BtnBox = styled.div`
   display: flex;

@@ -1,13 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-const size = {
-  mobile: "500px",
-};
-
-export const device = {
-  mobile: `(max-width: ${size.mobile})`,
-};
-
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0; 
@@ -28,5 +20,13 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
   }
 `;
+
+const size = {
+  mobile: "500px",
+};
+
+export const device = {
+  mobile: `(max-width: ${size.mobile})`,
+};
 
 export default GlobalStyle;

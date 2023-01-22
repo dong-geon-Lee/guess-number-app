@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { calcRandomNumber } from "../helper/calculate";
+import { Container } from "./styles";
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
-import { calcRandomNumber } from "../helper/calculate";
-import { Container } from "./styles";
 
 const GamePage = () => {
   const [number, setNumber] = useState(0);

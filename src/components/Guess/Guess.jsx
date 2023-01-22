@@ -1,12 +1,15 @@
 import React from "react";
+import { displayGuessNumber } from "../../helper/calculate";
 import { Container, Box, Line, SubText, Title } from "./styles";
 
 const Guess = ({ numCheck, randomNum }) => {
+  const displayNumberStatus = displayGuessNumber(numCheck, randomNum);
+
   return (
     <Container>
       <Title>Guess My Number!</Title>
       <Box check={numCheck} className="media__box">
-        <SubText>{numCheck ? randomNum : "?"}</SubText>
+        <SubText>{displayNumberStatus}</SubText>
       </Box>
       <Line />
     </Container>

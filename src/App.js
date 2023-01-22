@@ -1,14 +1,8 @@
 import React from "react";
 import GamePage from "./pages/GamePage";
-import GlobalStyle from "./styles/GlobalStyle";
 
 const App = () => {
-  return (
-    <>
-      <GlobalStyle />
-      <GamePage />
-    </>
-  );
+  return <GamePage />;
 };
 
 export default App;

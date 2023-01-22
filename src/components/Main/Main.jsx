@@ -1,7 +1,7 @@
 import React from "react";
-import { Container } from "./styles";
 import Actions from "./Actions/Actions";
 import Contents from "./Contents/Contents";
+import { Container } from "./styles";
 
 const Main = ({
   number,
@@ -21,7 +21,6 @@ const Main = ({
         numCheck={numCheck}
         score={score}
       />
-
       <Contents text={text} score={score} highScore={highScore} />
     </Container>
   );
