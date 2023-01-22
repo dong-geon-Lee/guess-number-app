@@ -1,5 +1,5 @@
 import React from "react";
-import { displayGuessNumber } from "../../helper/calculate";
+import { displayGuessNumber } from "../../helpers/helpers";
 import { Container, Box, Line, SubText, Title } from "./styles";
 
 const Guess = ({ numCheck, randomNum }) => {

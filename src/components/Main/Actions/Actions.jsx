@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Border, UpBtn, DownBtn, BtnBox, CheckBtn } from "./styles";
-import { checkBtnStatus } from "../../../helper/calculate";
+import { checkBtnStatus } from "../../../helpers/helpers";
 import {
   CHECK__BTN,
   MINUS__BTN,

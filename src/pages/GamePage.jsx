@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { calcRandomNumber } from "../helper/calculate";
+import { calcRandomNumber } from "../helpers/helpers";
 import { Container } from "./styles";
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
