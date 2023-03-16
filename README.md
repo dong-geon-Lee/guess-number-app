@@ -9,15 +9,15 @@
 > 게임이 종료됩니다. 
 
 
-### (1)  프로젝트 목적 
-- [x] 리액트 컴포넌트를 만들고 배치하기
-- [x] useState 이해하기
-- [x] props 이해하기
-- [x] styled-components 적용하기
-- [x] 기본적인 UI/UX를 이해하고 적용하기
-- [x] 리팩토링 프로젝트에 적용하기 
+### ( 1 ) &nbsp;프로젝트 목적 
+- :white_check_mark: &nbsp; 리액트 컴포넌트를 만들고 배치하기
+- :white_check_mark: &nbsp; useState 이해하기
+- :white_check_mark: &nbsp; props 이해하기
+- :white_check_mark: &nbsp; styled-components 적용하기
+- :white_check_mark: &nbsp; 기본적인 UI/UX를 이해하고 적용하기
+- :white_check_mark: &nbsp; 리팩토링 프로젝트에 적용하기 
 
-### (2)  프로젝트 실행
+### ( 2 ) &nbsp;프로젝트 실행
 #### 터미널에서 다음 명령어를 입력합니다. 
 
 ```
@@ -64,6 +64,11 @@ npm start
 #### helpers: 특정 결과값을 얻는 데 도와주는 헬퍼 함수들을 모아두었습니다. </br>
 #### pages: 완성된 컴포넌트를 나열하여 전체적인 UI를 동적으로 파악하기 위해 사용하였습니다. </br> 
 #### styles: 글로벌 스타일을 관리합니다. </br>
+</br>
+
+## :white_check_mark: &nbsp; 프로젝트 후기
+
+
 </br>
 
 ## :eyes: &nbsp; 프로젝트 시연
