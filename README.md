@@ -66,11 +66,6 @@ npm start
 #### styles: 글로벌 스타일을 관리합니다. </br>
 </br>
 
-## :white_check_mark: &nbsp; 프로젝트 후기
-
-
-</br>
-
 ## :eyes: &nbsp; 프로젝트 시연
 <details>
 <summary>랜딩페이지</summary>  
@@ -121,6 +116,12 @@ npm start
 </details>
 <br/>
 
+## :white_check_mark: &nbsp; 프로젝트 후기
+
+#### 리액트의 기본적인 사용법을 적용 할 수 있었습니다. 
+
+
+</br>
 
 ## :bust_in_silhouette: &nbsp; Crew
 Crew | Role | GitHub
