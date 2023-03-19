@@ -8,28 +8,25 @@
 > 틀리면 라이프 역할을 하는 숫자가 내려가고 0이 되면
 > 게임이 종료됩니다. 
 
+</br>
 
 ### ( 1 ) &nbsp;프로젝트 목적 
-- :white_check_mark: &nbsp; 리액트 컴포넌트를 만들고 배치하기
+- :white_check_mark: &nbsp; 리액트 컴포넌트 이해하기
 - :white_check_mark: &nbsp; useState 이해하기
 - :white_check_mark: &nbsp; props 이해하기
 - :white_check_mark: &nbsp; styled-components 적용하기
-- :white_check_mark: &nbsp; 기본적인 UI/UX를 이해하고 적용하기
-- :white_check_mark: &nbsp; 리팩토링 프로젝트에 적용하기 
+- :white_check_mark: &nbsp; 기본적인 UI를 이해하고 적용하기
+- :white_check_mark: &nbsp; 리팩토링 연습하기 
 
-### ( 2 ) &nbsp;프로젝트 실행
+### ( 2 ) &nbsp;프로젝트 설치 & 실행
 #### 터미널에서 다음 명령어를 입력합니다. 
 
 ```
-git clone https://github.com/dong-geon-Lee/guess-number-app.git
-cd guess-number-app 
-npm install
-```
-
-#### 설치 완료 후 서버를 실행시켜주세요.
-
-```
-npm start
+$ git clone https://github.com/dong-geon-Lee/guess-number-app.git
+$ cd guess-number-app 
+$ code .
+$ npm install
+$ npm start
 ```
 
 <br/>
@@ -52,7 +49,7 @@ npm start
 <br/>
 <br/>
 ### 선택 이유
-#### - HTML/CSS/JS : 웹개발을 이루는 기본적인 요소라서 채용하였습니다.
+#### - HTML / CSS / JS : 웹개발을 이루는 기본적인 요소라서 채용하였습니다.
 #### - React: 리액트를 사용하면 컴포넌트를 이용해 UI를 쉽고 간결하게 만들 수 있어 예측 가능한 개발이 가능했습니다.
 #### - Styled-components: css 충돌을 방지하고 재사용성이 높아 유지보수가 용이하여 선택하였습니다.  
 <br/>
@@ -66,6 +63,10 @@ npm start
 #### helpers: 특정 결과값을 얻는 데 도와주는 헬퍼 함수들을 모아두었습니다. </br>
 #### pages: 완성된 컴포넌트를 나열하여 전체적인 UI를 동적으로 파악하기 위해 사용하였습니다. </br> 
 #### styles: 글로벌 스타일을 관리합니다. </br>
+</br>
+
+## :herb: &nbsp; 프로젝트 기능
+
 </br>
 
 ## :eyes: &nbsp; 프로젝트 시연
