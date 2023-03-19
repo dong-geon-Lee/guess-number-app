@@ -11,11 +11,10 @@
 </br>
 
 ### ( 1 ) &nbsp;프로젝트 목적 
-- :white_check_mark: &nbsp; 리액트 컴포넌트 이해하기
+- :white_check_mark: &nbsp; 리액트 컴포넌트 사용법 이해하기
 - :white_check_mark: &nbsp; useState 이해하기
 - :white_check_mark: &nbsp; props 이해하기
 - :white_check_mark: &nbsp; styled-components 적용하기
-- :white_check_mark: &nbsp; 기본적인 UI를 이해하고 적용하기
 - :white_check_mark: &nbsp; 리팩토링 연습하기 
 
 ### ( 2 ) &nbsp;프로젝트 설치 & 실행
@@ -65,7 +64,48 @@ $ npm start
 #### styles: 글로벌 스타일을 관리합니다. </br>
 </br>
 
-## :herb: &nbsp; 프로젝트 기능
+
+## :herb: &nbsp; 프로젝트 설명
+### 1. 프로젝트에서 이벤트를 일으키는 버튼은 check와 Retry 버튼입니다. 
+![스크린샷 2023-03-19 오전 10 49 29](https://user-images.githubusercontent.com/69576865/226149303-2ebefbcd-46cb-49a3-b558-00cc57adadba.png)
+
+### 1-1. 함수
+
+- handleGameReset(): number, randomNum, numCheck, score, highScore, text 상태 변수를 초기값으로 설정하여 게임을 초기화하는 함수.
+
+```js
+  const handleGameReset = () => {
+    setNumber(0);
+    setRandomNum(calcRandomNumber());
+    setNumCheck(false);
+    setScore(10);
+    setHighScore(0);
+    setText("Start guessing...");
+  };
+```
+- handleCheckNumber(): 유저가 예상한 num과 randomNum을 비교하고 그에 따라 피드백 메시지와 score 및 highScore 상태 변수를 업데이트하는 함수입니다.
+num이 randomNum과 일치하면 numCheck 상태 변수가 true로 설정됩니다.
+
+```js
+  const handleCheckNumber = (num) => {
+    if (num === randomNum) {
+      setNumCheck(true);
+      setHighScore(score);
+      setText("🎉 Correct Number");
+    } else {
+      if (num > randomNum) setText("📈 Too high!");
+      if (num < randomNum) setText("📉 Too low!");
+      setScore((prevState) => prevState - 1);
+    }
+  };
+```
+### 1-2. 상태변수
+- number: 플레이어가 추측한 현재 숫자를 나타내는 상태 변수입니다. useState() 후크를 사용하여 0으로 초기화됩니다.
+- randomNum: calcRandomNumber() 함수에 의해 생성된 난수를 나타내는 상태 변수입니다. useState() 후크를 사용하여 임의의 값으로 초기화됩니다.
+- numCheck: 플레이어가 올바른 숫자를 추측했는지 여부를 나타내는 상태 변수입니다. useState() 후크를 사용하여 false로 초기화됩니다.
+- score: 플레이어의 현재 점수를 나타내는 상태 변수. useState() 후크를 사용하여 10으로 초기화됩니다.
+- highScore: 지금까지 플레이어가 달성한 최고 점수를 나타내는 상태 변수입니다. useState() 후크를 사용하여 0으로 초기화됩니다.
+- text: 플레이어에게 보여지는 피드백 메시지를 나타내는 상태 변수. useState() 후크를 사용하여 "추측 시작..."으로 초기화됩니다.
 
 </br>
 
