@@ -21,6 +21,8 @@
 #### 터미널에서 다음 명령어를 입력합니다. 
 
 ```
+git clone https://github.com/dong-geon-Lee/guess-number-app.git
+cd guess-number-app 
 npm install
 ```
 
