@@ -30,8 +30,7 @@ const GamePage = () => {
     } else {
       if (num > randomNum) setText("📈 Too high!");
       if (num < randomNum) setText("📉 Too low!");
-      setNumCheck(false);
-      setScore(score - 1);
+      setScore((prevState) => prevState - 1);
     }
   };
 
