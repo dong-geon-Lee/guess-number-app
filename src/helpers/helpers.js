@@ -1,4 +1,4 @@
-import { QUESTION__MARK } from "../constants/constants";
+import * as C from "../constants/constants";
 
 export const calcRandomNumber = () => {
   return Math.floor(Math.random() * 10 + 1);
@@ -9,5 +9,5 @@ export const checkBtnStatus = (numCheck, playing) => {
 };
 
 export const displayGuessNumber = (numCheck, randomNum) => {
-  return numCheck ? randomNum : QUESTION__MARK;
+  return numCheck ? randomNum : C.QUESTION__MARK;
 };
