@@ -1,7 +1,7 @@
 import React from "react";
 import Actions from "./Actions/Actions";
 import Contents from "./Contents/Contents";
-import { Container } from "./styles";
+import * as S from "./styles";
 
 const Main = ({
   number,
@@ -13,7 +13,7 @@ const Main = ({
   handleCheckNumber,
 }) => {
   return (
-    <Container>
+    <S.Container>
       <Actions
         number={number}
         setNumber={setNumber}
@@ -22,7 +22,7 @@ const Main = ({
         score={score}
       />
       <Contents text={text} score={score} highScore={highScore} />
-    </Container>
+    </S.Container>
   );
 };
 

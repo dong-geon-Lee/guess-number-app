@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, Border, UpBtn, DownBtn, BtnBox, CheckBtn } from "./styles";
 import { checkBtnStatus } from "../../../helpers/helpers";
 import {
   CHECK__BTN,
   MINUS__BTN,
   PLUS__BTN,
 } from "../../../constants/constants";
+import { Container, Border, UpBtn, DownBtn, BtnBox, CheckBtn } from "./styles";
 
 const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
   const playing = score > 0;

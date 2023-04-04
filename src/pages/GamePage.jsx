@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { calcRandomNumber } from "../helpers/helpers";
-import { Container } from "./styles";
 import {
   CORRECT__MESSAGE,
   HIGH__NUMBER,
@@ -10,6 +9,7 @@ import {
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
+import * as S from "./styles";
 
 const GamePage = () => {
   const [number, setNumber] = useState(0);
@@ -41,7 +41,7 @@ const GamePage = () => {
   };
 
   return (
-    <Container check={numCheck}>
+    <S.Container check={numCheck}>
       <Header handleGameReset={handleGameReset} />
       <Guess numCheck={numCheck} randomNum={randomNum} />
       <Main
@@ -53,7 +53,7 @@ const GamePage = () => {
         setNumber={setNumber}
         handleCheckNumber={handleCheckNumber}
       />
-    </Container>
+    </S.Container>
   );
 };
 
