@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { calcRandomNumber } from "../helpers/helpers";
-import {
-  CORRECT__MESSAGE,
-  HIGH__NUMBER,
-  LOW__NUMBER,
-  START__TEXT,
-} from "../constants/constants";
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import * as S from "./styles";
+import * as C from "../constants/constants";
 
 const GamePage = () => {
   const [number, setNumber] = useState(0);
@@ -17,7 +12,7 @@ const GamePage = () => {
   const [numCheck, setNumCheck] = useState(false);
   const [score, setScore] = useState(10);
   const [highScore, setHighScore] = useState(0);
-  const [text, setText] = useState(START__TEXT);
+  const [text, setText] = useState(C.START__TEXT);
 
   const handleGameReset = () => {
     setNumber(0);
@@ -25,17 +20,17 @@ const GamePage = () => {
     setNumCheck(false);
     setScore(10);
     setHighScore(0);
-    setText(START__TEXT);
+    setText(C.START__TEXT);
   };
 
   const handleCheckNumber = (num) => {
     if (num === randomNum) {
       setNumCheck(true);
       setHighScore(score);
-      setText(CORRECT__MESSAGE);
+      setText(C.CORRECT__MESSAGE);
     } else {
-      if (num > randomNum) setText(HIGH__NUMBER);
-      if (num < randomNum) setText(LOW__NUMBER);
+      if (num > randomNum) setText(C.HIGH__NUMBER);
+      if (num < randomNum) setText(C.LOW__NUMBER);
       setScore((prevState) => prevState - 1);
     }
   };
