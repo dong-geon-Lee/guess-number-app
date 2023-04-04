@@ -1,18 +1,18 @@
 import React from "react";
 import { displayGuessNumber } from "../../helpers/helpers";
-import { Container, Box, Line, SubText, Title } from "./styles";
+import * as S from "./styles";
 
 const Guess = ({ numCheck, randomNum }) => {
   const displayNumberStatus = displayGuessNumber(numCheck, randomNum);
 
   return (
-    <Container>
-      <Title>Guess My Number!</Title>
-      <Box check={numCheck} className="media__box">
-        <SubText>{displayNumberStatus}</SubText>
-      </Box>
-      <Line />
-    </Container>
+    <S.Container>
+      <S.Title>Guess My Number!</S.Title>
+      <S.Box check={numCheck} className="media__box">
+        <S.SubText>{displayNumberStatus}</S.SubText>
+      </S.Box>
+      <S.Line />
+    </S.Container>
   );
 };
 
