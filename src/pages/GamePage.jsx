@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { calcRandomNumber } from "../helpers/helpers";
 import { Container } from "./styles";
+import { CORRECT__MESSAGE, START__TEXT } from "../constants/constants";
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
-import { START_TEXT } from "../constants/constants";
 
 const GamePage = () => {
   const [number, setNumber] = useState(0);
@@ -12,7 +12,7 @@ const GamePage = () => {
   const [numCheck, setNumCheck] = useState(false);
   const [score, setScore] = useState(10);
   const [highScore, setHighScore] = useState(0);
-  const [text, setText] = useState(START_TEXT);
+  const [text, setText] = useState(START__TEXT);
 
   const handleGameReset = () => {
     setNumber(0);
@@ -20,14 +20,14 @@ const GamePage = () => {
     setNumCheck(false);
     setScore(10);
     setHighScore(0);
-    setText(START_TEXT);
+    setText(START__TEXT);
   };
 
   const handleCheckNumber = (num) => {
     if (num === randomNum) {
       setNumCheck(true);
       setHighScore(score);
-      setText("🎉 Correct Number");
+      setText(CORRECT__MESSAGE);
     } else {
       if (num > randomNum) setText("📈 Too high!");
       if (num < randomNum) setText("📉 Too low!");
