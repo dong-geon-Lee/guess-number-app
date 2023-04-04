@@ -10,3 +10,4 @@ export const START__TEXT = "Start guessing...";
 export const CORRECT__MESSAGE = "🎉 Correct Number";
 export const HIGH__NUMBER = "📈 Too high!";
 export const LOW__NUMBER = "📉 Too low!";
+export const GAME__OVER = "💥 Game over!";

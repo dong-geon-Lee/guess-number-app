@@ -1,9 +1,13 @@
 import React from "react";
-import { MEDAL__ICON, SCORE__ICON } from "../../../constants/constants";
+import {
+  GAME__OVER,
+  MEDAL__ICON,
+  SCORE__ICON,
+} from "../../../constants/constants";
 import * as S from "./styles";
 
 const Contents = ({ text, score, highScore }) => {
-  const displayGameStatus = score > 0 ? text : "💥 Game over!";
+  const displayGameStatus = score > 0 ? text : GAME__OVER;
 
   return (
     <S.Container>
