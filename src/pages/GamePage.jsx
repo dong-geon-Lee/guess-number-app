@@ -4,6 +4,7 @@ import { Container } from "./styles";
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
+import { START_TEXT } from "../constants/constants";
 
 const GamePage = () => {
   const [number, setNumber] = useState(0);
@@ -11,7 +12,7 @@ const GamePage = () => {
   const [numCheck, setNumCheck] = useState(false);
   const [score, setScore] = useState(10);
   const [highScore, setHighScore] = useState(0);
-  const [text, setText] = useState("Start guessing...");
+  const [text, setText] = useState(START_TEXT);
 
   const handleGameReset = () => {
     setNumber(0);
@@ -19,7 +20,7 @@ const GamePage = () => {
     setNumCheck(false);
     setScore(10);
     setHighScore(0);
-    setText("Start guessing...");
+    setText(START_TEXT);
   };
 
   const handleCheckNumber = (num) => {

@@ -6,3 +6,4 @@ export const CHECK__BTN = "check";
 export const RETRY__BTN = "Retry";
 export const ANSWER__RANGE__TEXT = "(Between 1 and 10)";
 export const QUESTION__MARK = "?";
+export const START_TEXT = "Start guessing...";
