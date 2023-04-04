@@ -5,7 +5,7 @@ import {
   MINUS__BTN,
   PLUS__BTN,
 } from "../../../constants/constants";
-import { Container, Border, UpBtn, DownBtn, BtnBox, CheckBtn } from "./styles";
+import * as S from "./styles";
 
 const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
   const playing = score > 0;
@@ -22,35 +22,35 @@ const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
   };
 
   return (
-    <Container>
-      <Border>{number}</Border>
-      <BtnBox>
-        <DownBtn
+    <S.Container>
+      <S.Border>{number}</S.Border>
+      <S.BtnBox>
+        <S.DownBtn
           onClick={() => handleMinusNumber(number)}
           check={numCheck}
           play={playing}
           disabled={btnDisabled}
         >
           {MINUS__BTN}
-        </DownBtn>
-        <UpBtn
+        </S.DownBtn>
+        <S.UpBtn
           onClick={() => handlePlusNumber(number)}
           check={numCheck}
           play={playing}
           disabled={btnDisabled}
         >
           {PLUS__BTN}
-        </UpBtn>
-        <CheckBtn
+        </S.UpBtn>
+        <S.CheckBtn
           onClick={() => handleCheckNumber(number)}
           check={numCheck}
           play={playing}
           disabled={btnDisabled}
         >
           {CHECK__BTN}
-        </CheckBtn>
-      </BtnBox>
-    </Container>
+        </S.CheckBtn>
+      </S.BtnBox>
+    </S.Container>
   );
 };
 
