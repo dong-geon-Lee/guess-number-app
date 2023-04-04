@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { calcRandomNumber } from "../helpers/helpers";
 import { Container } from "./styles";
-import { CORRECT__MESSAGE, START__TEXT } from "../constants/constants";
+import {
+  CORRECT__MESSAGE,
+  HIGH__NUMBER,
+  LOW__NUMBER,
+  START__TEXT,
+} from "../constants/constants";
 import Guess from "../components/Guess/Guess";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
@@ -29,8 +34,8 @@ const GamePage = () => {
       setHighScore(score);
       setText(CORRECT__MESSAGE);
     } else {
-      if (num > randomNum) setText("📈 Too high!");
-      if (num < randomNum) setText("📉 Too low!");
+      if (num > randomNum) setText(HIGH__NUMBER);
+      if (num < randomNum) setText(LOW__NUMBER);
       setScore((prevState) => prevState - 1);
     }
   };

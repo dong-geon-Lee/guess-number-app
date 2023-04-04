@@ -8,3 +8,5 @@ export const ANSWER__RANGE__TEXT = "(Between 1 and 10)";
 export const QUESTION__MARK = "?";
 export const START__TEXT = "Start guessing...";
 export const CORRECT__MESSAGE = "🎉 Correct Number";
+export const HIGH__NUMBER = "📈 Too high!";
+export const LOW__NUMBER = "📉 Too low!";
