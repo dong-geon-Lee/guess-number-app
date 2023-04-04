@@ -1,11 +1,7 @@
 import React from "react";
 import { checkBtnStatus } from "../../../helpers/helpers";
-import {
-  CHECK__BTN,
-  MINUS__BTN,
-  PLUS__BTN,
-} from "../../../constants/constants";
 import * as S from "./styles";
+import * as C from "../../../constants/constants";
 
 const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
   const playing = score > 0;
@@ -31,7 +27,7 @@ const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
           play={playing}
           disabled={btnDisabled}
         >
-          {MINUS__BTN}
+          {C.MINUS__BTN}
         </S.DownBtn>
         <S.UpBtn
           onClick={() => handlePlusNumber(number)}
@@ -39,7 +35,7 @@ const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
           play={playing}
           disabled={btnDisabled}
         >
-          {PLUS__BTN}
+          {C.PLUS__BTN}
         </S.UpBtn>
         <S.CheckBtn
           onClick={() => handleCheckNumber(number)}
@@ -47,7 +43,7 @@ const Actions = ({ number, setNumber, numCheck, handleCheckNumber, score }) => {
           play={playing}
           disabled={btnDisabled}
         >
-          {CHECK__BTN}
+          {C.CHECK__BTN}
         </S.CheckBtn>
       </S.BtnBox>
     </S.Container>
