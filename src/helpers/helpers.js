@@ -4,10 +4,10 @@ export const calcRandomNumber = () => {
   return Math.floor(Math.random() * 10 + 1);
 };
 
-export const checkBtnStatus = (numCheck, playing) => {
-  return numCheck || !playing ? true : false;
+export const checkBtnStatus = (validIsNumber, playing) => {
+  return validIsNumber || !playing ? true : false;
 };
 
-export const displayGuessNumber = (numCheck, randomNum) => {
-  return numCheck ? randomNum : C.QUESTION__MARK;
+export const displayGuessNumber = (validIsNumber, randomNumber) => {
+  return validIsNumber ? randomNumber : C.QUESTION__MARK;
 };
