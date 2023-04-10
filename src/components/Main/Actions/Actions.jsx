@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { checkBtnStatus } from "../../../helpers/helpers";
+import { checkBtnStatus } from "../../../utils/utils";
 import {
   changeText,
   correctNumber,

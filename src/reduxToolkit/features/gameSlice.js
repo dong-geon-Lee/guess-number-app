@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { calcRandomNumber } from "../../helpers/helpers";
+import { calcRandomNumber } from "../../utils/utils";
 import { START__TEXT } from "../../constants/constants";
 
 const initialState = {

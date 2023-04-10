@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { displayGuessNumber } from "../../helpers/helpers";
+import { displayGuessNumber } from "../../utils/utils";
 import * as S from "./styles";
 
 const Guess = () => {
