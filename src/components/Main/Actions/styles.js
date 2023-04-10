@@ -32,6 +32,11 @@ export const Border = styled.div`
   }
 `;
 
+export const BtnBox = styled.div`
+  display: flex;
+  gap: 1.4rem;
+`;
+
 export const Button = styled.button`
   border: none;
   border-radius: 0.4rem;
@@ -39,7 +44,7 @@ export const Button = styled.button`
   font-size: 1.6rem;
   padding: 1.6rem 2rem;
   background-color: #fff;
-  cursor: pointer;
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
   letter-spacing: 1px;
 
   &:hover {
@@ -47,16 +52,6 @@ export const Button = styled.button`
   }
 `;
 
-export const UpBtn = styled(Button)`
-  cursor: ${(props) =>
-    props.check || !props.play ? "not-allowed" : "pointer"};
-`;
-
-export const DownBtn = styled(UpBtn)``;
-
-export const CheckBtn = styled(UpBtn)``;
-
-export const BtnBox = styled.div`
-  display: flex;
-  gap: 1.4rem;
-`;
+export const UpBtn = styled(Button)``;
+export const DownBtn = styled(Button)``;
+export const CheckBtn = styled(Button)``;
