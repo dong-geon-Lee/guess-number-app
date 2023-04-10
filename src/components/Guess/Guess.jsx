@@ -1,14 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { displayGuessNumber } from "../../helpers/helpers";
 import * as S from "./styles";
 
-const Guess = ({ numCheck, randomNum }) => {
-  const displayNumberStatus = displayGuessNumber(numCheck, randomNum);
+const Guess = () => {
+  const { validIsNumber, randomNumber } = useSelector((state) => state.game);
+  const displayNumberStatus = displayGuessNumber(validIsNumber, randomNumber);
 
   return (
     <S.Container>
       <S.Title>Guess My Number!</S.Title>
-      <S.Box check={numCheck} className="media__box">
+      <S.Box check={validIsNumber} className="media__box">
         <S.SubText>{displayNumberStatus}</S.SubText>
       </S.Box>
       <S.Line />
