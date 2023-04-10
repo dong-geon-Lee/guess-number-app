@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 80%;
-  margin: 8rem auto;
+  margin: 1rem auto;
 
   @media ${device.mobile} {
     margin-top: 2rem;

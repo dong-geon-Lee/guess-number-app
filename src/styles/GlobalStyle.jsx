@@ -4,13 +4,12 @@ const GlobalStyle = createGlobalStyle`
   * {
     margin: 0; 
     padding: 0; 
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
 
   html {
     font-size: 62.5%;
-    box-sizing: border-box;
-    overflow-x:hidden;
+    overflow-x: hidden;
   }
 
   body {
