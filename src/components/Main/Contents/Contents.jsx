@@ -1,8 +1,10 @@
 import React from "react";
 import * as S from "./styles";
 import * as C from "../../../constants/constants";
+import { useSelector } from "react-redux";
 
-const Contents = ({ text, score, highScore }) => {
+const Contents = () => {
+  const { text, score, highScore } = useSelector((state) => state.game);
   const displayGameStatus = score > 0 ? text : C.GAME__OVER;
 
   return (
