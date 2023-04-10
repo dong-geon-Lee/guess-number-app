@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { calcRandomNumber } from "../../utils/utils";
-import { START__TEXT } from "../../constants/constants";
 
 const initialState = {
   number: 0,
@@ -8,7 +7,7 @@ const initialState = {
   validIsNumber: false,
   score: 10,
   highScore: 0,
-  text: START__TEXT,
+  text: "Start guessing...",
 };
 
 const gameSlice = createSlice({
@@ -39,7 +38,7 @@ const gameSlice = createSlice({
       state.validIsNumber = false;
       state.score = 10;
       state.highScore = 0;
-      state.text = START__TEXT;
+      state.text = "Start guessing...";
     },
   },
 });

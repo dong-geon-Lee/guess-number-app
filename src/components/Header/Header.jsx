@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { gameReset } from "../../reduxToolkit/features/gameSlice";
+import { gameReset } from "../../redux/features/gameSlice";
 import * as S from "./styles";
 import * as C from "../../constants/constants";
 

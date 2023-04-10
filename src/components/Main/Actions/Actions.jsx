@@ -7,7 +7,7 @@ import {
   decreaseNumber,
   increaseNumber,
   missNumber,
-} from "../../../reduxToolkit/features/gameSlice";
+} from "../../../redux/features/gameSlice";
 import * as S from "./styles";
 import * as C from "../../../constants/constants";
 
