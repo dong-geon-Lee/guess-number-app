@@ -1,7 +1,7 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import * as S from "./styles";
 import * as C from "../../../constants/constants";
-import { useSelector } from "react-redux";
 
 const Contents = () => {
   const { text, score, highScore } = useSelector((state) => state.game);

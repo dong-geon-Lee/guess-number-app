@@ -22,7 +22,7 @@ const gameSlice = createSlice({
     },
     correctNumber: (state, action) => {
       const { highScore, text } = action.payload;
-      state.validIsNumber = true;
+      state.validIsNumber = !state.validIsNumber;
       state.highScore = highScore;
       state.text = text;
     },
